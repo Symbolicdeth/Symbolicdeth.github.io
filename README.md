@@ -1,3 +1,3 @@
 # Symbolicdeth.github.io
 
-web development / design developer
+web and design developer
