@@ -7,15 +7,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
-
-        header {
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
-}
-
-        section {   
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
-}
-</style>
+        @layer base {
+            body {
+                @apply font-serif p-2;
+            }
+            h1 {
+                @apply text-[1.5em] font-bold my-[0.60em];
+            }
+            h2 {
+                @apply text-[1.2em] font-bold my-[0.73em];
+            }
+            h3 {
+                @apply text-[1.17em] font-bold my-[1em];
+            }
+            p {
+                @apply my-4;
+            }
+            a {
+                @apply text-blue-700 underline;
+            }
+        }
+    </style>
 
 
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">    
@@ -29,17 +41,17 @@
 
     <header>
         <h1>"Hi, I'm Alvarez Salomon 81343."</h1>
-
-        <h2>Web / UI Designer
-             based in Dublin. Mobile and Responsive Web Design, eCommerce Websites, Branding and Logo Design
-        </h2>
+        <h2>Web / UI Designer</h2>
     </header>
 
     <main>
         <section>
             <p>I created this website to showcase some of my recent web design work.</p> 
 
-            <p>We deliver digital success to showcase your business at its best.</p> 
+            <p>We deliver digital success to showcase your business at its best.</p>
+
+            <h3>Sample Web Pages</h3>
+
             <p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
             <p><a href="exercises/page-2.html">Purple Rain</a></p>
             <p><a href="exercises/page-3.html">Web Page with section</a></p>
