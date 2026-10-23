@@ -1,52 +1,55 @@
 <!DOCTYPE html>
-<!-- saved from url=(0063)https://www.munnelly.com/dorset/lessons/assets/downloads/page-2 -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purple Rain</title>
-    <title>When Doves Cry</title>
-    <meta name="description" content="A basic web page containing some text from Wikipedia about the 1983-recorded song Purple Rain by Prince">
-
+    <title>Purple Rain | Prince</title>
+    <meta name="description" content="Background and legacy of Purple Rain, the 1984 song by Prince and The Revolution.">
+    <!-- Salomon Alvarez 81343 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
-        header {
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
-}
-        section {   
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
-}
-</style>
-
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">    
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">    
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">    
-<link rel="manifest" href="../assets/img/favicons/site.webmanifest">
-
-
-
+        @layer base {
+            body { @apply bg-violet-50 font-sans text-slate-900; }
+            header { @apply bg-violet-950 px-6 py-12 text-center text-white md:px-12; }
+            header h1 { @apply my-3 text-4xl font-extrabold tracking-tight md:text-6xl; }
+            main { @apply mx-auto max-w-4xl px-5 py-8 md:px-10; }
+            section { @apply my-6 rounded-xl bg-white p-6 shadow-sm ring-1 ring-violet-200 md:p-8; }
+            h2 { @apply mb-3 text-2xl font-bold text-violet-950; }
+            p { @apply my-4 text-base leading-7 text-slate-700; }
+            a { @apply font-semibold text-violet-800 underline decoration-2 underline-offset-4 hover:text-violet-600 focus:outline-2 focus:outline-offset-2; }
+            footer { @apply px-6 py-5 text-center text-sm text-slate-600; }
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/favicons/site.webmanifest">
 </head>
-
 <body>
-
-<h1>Purple Rain</h1>
-
-<h2>Introduction</h2>
-<p><i>Purple Rain</i> is a song by American musician Prince and his backing band The Revolution. It is the title track from the 1984 album of the same name, which in turn is the soundtrack album for the 1984 film of the same name.</p><p>
-
-</p><h2>Origins</h2>
-<p>Originally written as a country song and intended to be a collaboration with Stevie Nicks, Prince explained the meaning of the song as follows: <i>"When there's blood in the sky... red and blue = purple. Purple rain pertains to the end of the world and being with the one you love and letting your faith/god guide you through the purple rain."<i></i></i></p><i><i>
-
-<h2>Recording</h2>
-<p>The song was recorded during a benefit concert for the Minnesota Dance Theatre at the First Avenue nightclub in Minneapolis on August 3, 1983. <i>City Pages</i> described the 70-minute performance as Prince's "sweatiest and most soulful hometown concert yet."</p>
-
-<h2>Reception and legacy</h2>
-<p>The song ranked number 144 on the Rolling Stone list of the 500 Greatest Songs of All Time. Q magazine placed it at number 40 in its list of the 100 Greatest Guitar Tracks, and Pitchfork named it the best song of the 1980s. The song is also included in The Rock and Roll Hall of Fame's 500 Songs that Shaped Rock and Roll.</p>
-
-<p><b>Source<b>: <i>Wikipedia</i>.</b></b></p><b><b>
-
-
-<p><a href="../index.html">Back to Home page</a></p>
-
-
-</b></b></i></i></body></html>
+    <header>
+        <h1>Purple Rain</h1>
+        <p class="text-lg font-medium italic text-violet-100">A song by Prince and The Revolution</p>
+    </header>
+    <main>
+        <section aria-labelledby="introduction">
+            <h2 id="introduction">Introduction</h2>
+            <p><i>Purple Rain</i> is a song by American musician Prince and his backing band The Revolution. It is the title track from the 1984 album of the same name, which also serves as the soundtrack album for the 1984 film.</p>
+        </section>
+        <section aria-labelledby="origins">
+            <h2 id="origins">Origins</h2>
+            <p>Originally written as a country song and intended as a collaboration with Stevie Nicks, Prince explained the song's imagery in terms of red and blue blending into purple. He connected the purple rain with the end of the world, being with someone you love, and letting faith guide you.</p>
+        </section>
+        <section aria-labelledby="recording">
+            <h2 id="recording">Recording</h2>
+            <p>The song was recorded during a benefit concert for the Minnesota Dance Theatre at the First Avenue nightclub in Minneapolis on August 3, 1983. The performance became the source of the version released on the album.</p>
+        </section>
+        <section aria-labelledby="legacy">
+            <h2 id="legacy">Reception and Legacy</h2>
+            <p>The song has appeared on several major lists of acclaimed music. <i>Rolling Stone</i> ranked it among its 500 Greatest Songs of All Time, while <i>Q</i> magazine and <i>Pitchfork</i> also recognized its influence.</p>
+            <p><b>Source:</b> Adapted from Wikipedia.</p>
+        </section>
+        <p><a href="../index.html">Back to Home page</a></p>
+    </main>
+    <footer><p>Alvarez Salomon · Front End Web Development</p></footer>
+</body>
+</html>

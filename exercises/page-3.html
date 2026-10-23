@@ -1,97 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web Page with Sections</title>
-<meta name="description" content="Between 150 and 160 characters (including spaces). Like the title, this is important for search engines.">
-
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Semantic Sections | Alvarez Salomon</title>
+    <meta name="description" content="A responsive page demonstrating six semantic sections, typography and accessible colour combinations.">
+    <!-- Salomon Alvarez 81343 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
-        header {
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
-}
-
-        section {   
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
-}
-</style>
-
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">    
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">    
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">    
-<link rel="manifest" href="../assets/img/favicons/site.webmanifest">
-
-
-</head>    
-    
+        @layer base {
+            body { @apply bg-slate-100 font-sans text-slate-900; }
+            header { @apply bg-indigo-950 px-6 py-12 text-center text-white md:px-12; }
+            header h1 { @apply my-3 text-4xl font-extrabold uppercase tracking-wide md:text-5xl; }
+            header h2 { @apply my-3 text-xl font-medium italic leading-relaxed text-indigo-100 md:text-2xl; }
+            main { @apply mx-auto max-w-5xl px-5 py-8 md:px-10; }
+            section { @apply my-6 rounded-xl bg-white p-6 shadow-sm ring-1 ring-slate-200 md:p-8; }
+            section h2 { @apply mb-4 text-2xl font-bold tracking-tight text-indigo-950; }
+            section p { @apply my-3 text-base leading-7 text-slate-700; }
+            a { @apply font-semibold text-indigo-800 underline decoration-2 underline-offset-4 hover:text-indigo-600 focus:outline-2 focus:outline-offset-2; }
+            footer { @apply bg-indigo-950 px-6 py-5 text-center text-white; }
+        }
+    </style>
+</head>
 <body>
-
- <!-- Hero block -->
     <header>
-        <h1>Big heading</h1>
-        <h2>Smaller sub-heading</h2>
+        <h1>Big Heading</h1>
+        <h2>A responsive page built with semantic sections and accessible colours</h2>
     </header>
-
-    <!-- Main content of web page in sections -->
     <main>
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repellat dignissimos quisquam ipsum a ex aliquid natus eum voluptatum voluptas suscipit, quia inventore dolor fugit quaerat praesentium odit accusantium labore.</p>
-
+        <section aria-labelledby="section-one"><h2 id="section-one">A Thoughtful Beginning</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat, neque at posuere tempor, justo odio tincidunt magna, vitae aliquet ligula enim sed erat.</p>
+            <p>Praesent vel lacus sed turpis consequat tincidunt. Integer vitae sapien sed nibh faucibus feugiat, sed non erat. Curabitur ut mi quis nibh facilisis consequat.</p>
         </section>
-
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repellat dignissimos quisquam ipsum a ex aliquid natus eum voluptatum voluptas suscipit, quia inventore dolor fugit quaerat praesentium odit accusantium labore.</p>
-
+        <section aria-labelledby="section-two"><h2 id="section-two">Ideas in Motion</h2>
+            <p>Donec ac urna eu justo tincidunt viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <p>Aliquam erat volutpat. Sed at lectus sed nulla malesuada dictum. Duis quis arcu non purus feugiat finibus, eget blandit justo porttitor.</p>
         </section>
-
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repellat dignissimos quisquam ipsum a ex aliquid natus eum voluptatum voluptas suscipit, quia inventore dolor fugit quaerat praesentium odit accusantium labore.</p>
-
+        <section aria-labelledby="section-three"><h2 id="section-three">A Clear Direction</h2>
+            <p>Morbi vitae lacus eu lectus maximus malesuada. Nulla facilisi. Suspendisse potenti, sed dignissim sapien sed lorem interdum, in placerat risus tincidunt.</p>
+            <p>Nam tincidunt, eros a feugiat luctus, neque sapien volutpat massa, vitae volutpat purus justo sit amet sem. Integer sit amet velit quis arcu aliquam.</p>
         </section>
-
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repellat dignissimos quisquam ipsum a ex aliquid natus eum voluptatum voluptas suscipit, quia inventore dolor fugit quaerat praesentium odit accusantium labore.</p>
-
+        <section aria-labelledby="section-four"><h2 id="section-four">Room to Explore</h2>
+            <p>Curabitur congue, risus vitae cursus aliquet, lectus ipsum porta nisl, a malesuada velit risus eget sapien. Cras eget lectus vitae leo mattis placerat.</p>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec blandit risus ac magna tempor, non interdum dui luctus.</p>
         </section>
-
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repellat dignissimos quisquam ipsum a ex aliquid natus eum voluptatum voluptas suscipit, quia inventore dolor fugit quaerat praesentium odit accusantium labore.</p>
-
+        <section aria-labelledby="section-five"><h2 id="section-five">Small Details Matter</h2>
+            <p>Fusce viverra felis sed justo varius, nec pulvinar massa aliquet. Etiam vel sem vitae sapien viverra malesuada a sed urna.</p>
+            <p>Ut consequat enim nec augue posuere, a elementum erat tristique. Suspendisse sed mauris ac erat semper rhoncus quis at nibh.</p>
         </section>
-
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repellat dignissimos quisquam ipsum a ex aliquid natus eum voluptatum voluptas suscipit, quia inventore dolor fugit quaerat praesentium odit accusantium labore.</p>
-
+        <section aria-labelledby="section-six"><h2 id="section-six">A Strong Finish</h2>
+            <p>Quisque euismod quam nec purus fermentum, quis feugiat nisi faucibus. Aenean pellentesque est eget felis vulputate, eget facilisis mauris tristique.</p>
+            <p>Explore the other examples on this site, or <a href="../index.html">return to the home page</a> to choose another page.</p>
         </section>
-
-        <p><a href="../index.html">Back to Home page</a></p>
-    
     </main>
-    <!-- main content ends here -->
-
-    </body>
-    
-    </html>
-    
-    
+    <footer><p>Alvarez Salomon · Front End Web Development</p></footer>
+</body>
+</html>

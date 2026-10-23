@@ -4,64 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alvarez Salomon 81343 | Creative Digital Designer</title>
-
+    <meta name="description" content="A portfolio of web design and front-end development exercises by Alvarez Salomon.">
+    <!-- Salomon Alvarez 81343 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
         @layer base {
-            body {
-                @apply font-serif p-10;
-            }
-            h1 {
-                @apply text-[1.8em] font-bold my-[0.60em];
-            }
-            h2 {
-                @apply text-[1.2em] font-bold my-[0.73em];
-            }
-            h3 {
-                @apply text-[1.10em] font-bold my-[1em];
-            }
-            p {
-                @apply my-3;
-            }
-            a {
-                @apply text-blue-700 underline;
-            }
+            body { @apply bg-slate-50 text-slate-800 font-serif p-6 md:p-10; }
+            header, main { @apply mx-auto max-w-5xl; }
+            header { @apply py-8; }
+            h1 { @apply my-3 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl; }
+            h2 { @apply my-4 text-2xl font-semibold text-slate-700; }
+            h3 { @apply my-6 text-xl font-bold uppercase tracking-wide text-slate-800; }
+            p { @apply my-4 leading-7; }
+            a { @apply text-blue-800 underline decoration-2 underline-offset-4 hover:text-blue-600 focus:outline-2 focus:outline-offset-2; }
         }
     </style>
-
-
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">    
-<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">    
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">    
-<link rel="manifest" href="assets/img/favicons/site.webmanifest">
-
-
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
 </head>
 <body>
-
     <header>
-        <h1>"Hi, I'm Alvarez Salomon 81343."</h1>
+        <h1>Hi, I'm Alvarez Salomon 81343.</h1>
         <h2>Web / UI Designer</h2>
     </header>
-
     <main>
-        <section>
-            <p>I created this website to showcase some of my recent web design work.</p> 
-
+        <section aria-labelledby="intro-title">
+            <h3 id="intro-title">Creative digital work</h3>
+            <p>I created this website to showcase some of my recent web design work.</p>
             <p>We deliver digital success to showcase your business at its best.</p>
-
+            <img class="my-6 h-auto max-w-full rounded-lg" src="exercises/assets/img/front-end.png" alt="Illustration representing front-end development">
             <h3>Sample Web Pages</h3>
-
-            <p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
-            <p><a href="exercises/page-2.html">Purple Rain</a></p>
-            <p><a href="exercises/page-3.html">Web Page with section</a></p>
-            <p><a href="exercises/page-4.html">Vincent van Gogh</a></p>
-            <p><a href="exercises/page-5.html">Guiness</a></p>
-
-            <p><a href="exercises/hero-text.html">Hero block with animated text</a></p>
-
+            <ul class="list-inside list-disc space-y-2">
+                <li><a href="exercises/page-1.html">A Tale of Two Cities</a></li>
+                <li><a href="exercises/page-2.html">Purple Rain</a></li>
+                <li><a href="exercises/page-3.html">Web Page with Sections</a></li>
+                <li><a href="exercises/page-4.html">Vincent van Gogh</a></li>
+                <li><a href="exercises/page-5.html">Ireland's Top Five Visitor Attractions</a></li>
+                <li><a href="exercises/hero-text.html">Hero Block with Text</a></li>
+                <li><a href="exercises/hero-image.html">Hero Block with Image</a></li>
+                <li><a href="exercises/hero-video.html">Hero Block with Video</a></li>
+            </ul>
         </section>
     </main>
-
 </body>
 </html>

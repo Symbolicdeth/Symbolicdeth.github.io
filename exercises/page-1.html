@@ -3,59 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>A Tale of two cities</title>
-    <meta name="description" content="A basic web page containing some text from A Tale of Two Cities, a novel published in 1859 by English author Charles Dickens.">
-
+    <title>A Tale of Two Cities | Charles Dickens</title>
+    <meta name="description" content="An excerpt from A Tale of Two Cities, the 1859 novel by Charles Dickens.">
+    <!-- Salomon Alvarez 81343 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
-
-      header h1{
-            @apply text-6xl pt-20 px-[50%] pb-[12px] md:py-[5%] md:px-[20%];
-}
-
-        section {   
-            @apply pt-8 px-[9%] pb-[42px] md:py-[1%] md:px-[20%];
-}
-
-</style>
-
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">    
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">    
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">    
-<link rel="manifest" href="../assets/img/favicons/site.webmanifest">
-
-    
-<!--I am Salomon Alvarez.81343-->
+        @layer base {
+            body { @apply bg-slate-100 font-serif text-slate-900; }
+            header { @apply bg-blue-950 px-6 py-12 text-center text-white md:px-12 md:py-16; }
+            header h1 { @apply my-3 text-4xl font-bold tracking-tight md:text-6xl; }
+            main { @apply mx-auto max-w-4xl px-5 py-8 md:px-10; }
+            section { @apply rounded-xl bg-white p-6 shadow-sm ring-1 ring-slate-200 md:p-10; }
+            h2 { @apply mt-8 mb-3 text-2xl font-bold text-blue-950; }
+            h3 { @apply mt-8 mb-3 text-xl font-semibold italic text-blue-900; }
+            p { @apply my-4 text-base leading-8 text-slate-700 md:text-lg; }
+            a { @apply font-semibold text-blue-800 underline decoration-2 underline-offset-4 hover:text-blue-600 focus:outline-2 focus:outline-offset-2; }
+            footer { @apply px-6 py-5 text-center text-sm text-slate-600; }
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/favicons/site.webmanifest">
 </head>
 <body>
-
     <header>
-      <h1>A Tale of Two Cities</h1>
+        <h1>A Tale of Two Cities</h1>
     </header>
-       
     <main>
-        <section>
-          <p>It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.</p>
-
-          <p>We had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way - in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.</p>
-
-          <h2>Small Heading</h2>
-          <p>There were a king with a large jaw and a queen with a plain face, on the throne of England; there were a king with a large jaw and a queen with a fair face, on the throne of France. In both countries it was clearer than crystal to the lords of the State preserves of loaves and fishes, that things in general were settled for ever.</p>
-
-          <h2>Small Heading</h2>
-          <p>All these things, and a thousand like them, came to pass in and close upon the dear old year one thousand seven hundred and seventy-five. Environed by them, while the Woodman and the Farmer worked unheeded, those two of the large jaws, and those other two of the plain and the fair faces, trod with stir enough, and carried their divine rights with a high hand.</p>
-
-          <h3>Smaller Heading</h3>
-          <p>A wonderful fact to reflect upon, that every human creature is constituted to be that profound secret and mystery to every other. A solemn consideration, when I enter a great city by night, that every one of those darkly clustered houses encloses its own secret; that every room in every one of them encloses its own secret; that every beating heart in the hundreds of thousands of breasts there, is, in some of its imaginings, a secret to the heart nearest it!</p>
-          <p>by <i>Charles Dickens</i>, published by <b>Chapman and Hall</b> in 1859.</p>
-
-          <p><b>Source</b>:  <i>Wikipedia</i>.</p>
-
-          <p><a href="../index.html">Back to Home page</a></p>
-
+        <section aria-label="Excerpt from A Tale of Two Cities">
+            <p>It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.</p>
+            <p>We had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way—in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.</p>
+            <h2>Small Heading</h2>
+            <p>There were a king with a large jaw and a queen with a plain face, on the throne of England; there were a king with a large jaw and a queen with a fair face, on the throne of France. In both countries it was clearer than crystal to the lords of the State preserves of loaves and fishes, that things in general were settled for ever.</p>
+            <h2>Small Heading</h2>
+            <p>All these things, and a thousand like them, came to pass in and close upon the dear old year one thousand seven hundred and seventy-five. Environed by them, while the Woodman and the Farmer worked unheeded, those two of the large jaws, and those other two of the plain and the fair faces, trod with stir enough, and carried their divine rights with a high hand.</p>
+            <h3>Smaller Heading</h3>
+            <p>A wonderful fact to reflect upon, that every human creature is constituted to be that profound secret and mystery to every other. A solemn consideration, when I enter a great city by night, that every one of those darkly clustered houses encloses its own secret; that every room in every one of them encloses its own secret; that every beating heart in the hundreds of thousands of breasts there is, in some of its imaginings, a secret to the heart nearest it!</p>
+            <p class="text-sm italic text-slate-600">By <i>Charles Dickens</i>, published by <b>Chapman and Hall</b> in 1859.</p>
+            <p class="text-sm text-slate-600"><b>Source:</b> <i>Wikipedia</i>.</p>
+            <p><a href="../index.html">Back to Home page</a></p>
         </section>
     </main>
-
+    <footer><p>Alvarez Salomon · Front End Web Development</p></footer>
 </body>
 </html>
